@@ -53,6 +53,8 @@ interface AppProps {
   onDayRender?(date: Date): React.ReactNode
   unavailableDates?: Date[]
   initialVisibleMonth?: Date
+  zIndex?: number
+  disabled?: boolean
 }
 
 function App({
@@ -73,6 +75,8 @@ function App({
   monthLabelFormat = monthLabelFormatFn,
   onDayRender = undefined,
   unavailableDates = [],
+  zIndex,
+  disabled = false,
 }: AppProps) {
   const [state, dispatch] = useReducer(reducer, initialState)
 
@@ -103,6 +107,8 @@ function App({
         onDayRender={onDayRender}
         unavailableDates={unavailableDates}
         initialVisibleMonth={initialVisibleMonth}
+        zIndex={zIndex}
+        disabled={disabled}
       />
     </div>
   )
@@ -252,6 +258,22 @@ storiesOf('DateSingleInput', module)
         isDateBlocked={(date: Date) => isSameDay(date, addDays(new Date(), 1))}
       />
     </ThemeProvider>
+  ))
+  .add('Disabled input', () => (
+    <App
+      disabled
+      showResetDate={boolean('showResetDate', true)}
+      showClose={boolean('showClose', true)}
+      displayFormat={text('displayFormat', 'MM/dd/yyyy')}
+    />
+  ))
+  .add('Custom z-index', () => (
+    <App
+      zIndex={1000}
+      showResetDate={boolean('showResetDate', true)}
+      showClose={boolean('showClose', true)}
+      displayFormat={text('displayFormat', 'MM/dd/yyyy')}
+    />
   ))
   .add('Custom day render', () => (
     <ThemeProvider

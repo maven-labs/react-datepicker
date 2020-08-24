@@ -140,6 +140,38 @@ test('should render rtl, variant', () => {
   expect(container).toMatchSnapshot()
 })
 
+test('should render zIndex', () => {
+  const onDatesChange = jest.fn()
+  const onFocusChange = jest.fn()
+  const {container} = render(
+    <Datepicker
+      zIndex={1000}
+      showDatepicker
+      onFocusChange={onFocusChange}
+      date={null}
+      onDateChange={onDatesChange}
+      placement="top"
+    />,
+  )
+  expect(container).toMatchSnapshot()
+})
+
+test('should render a disabled input', () => {
+  const onDatesChange = jest.fn()
+  const onFocusChange = jest.fn()
+  const {container} = render(
+    <Datepicker
+      disabled
+      showDatepicker={false}
+      onFocusChange={onFocusChange}
+      date={null}
+      onDateChange={onDatesChange}
+      placement="top"
+    />,
+  )
+  expect(container).toMatchSnapshot()
+})
+
 test('should render without calendar icon, reset dates and close component', () => {
   const onDatesChange = jest.fn()
   const onFocusChange = jest.fn()

@@ -92,6 +92,8 @@ export interface DateSingleInputProps {
   onDayRender?(date: Date): React.ReactNode
   inputId?: string
   unavailableDates?: Date[]
+  zIndex?: number
+  disabled?: boolean
 }
 
 function DateSingleInput({
@@ -107,6 +109,8 @@ function DateSingleInput({
   monthLabelFormat,
   onDayRender,
   initialVisibleMonth,
+  zIndex,
+  disabled = false,
   numberOfMonths = 1,
   showClose = true,
   showResetDate = true,
@@ -175,7 +179,7 @@ function DateSingleInput({
   return (
     <ThemeProvider theme={(theme: Record<string, unknown>) => theme || {}}>
       <Wrapper
-        zIndex={theme.dateSingleZIndex}
+        zIndex={zIndex || theme.dateSingleZIndex}
         rtl={rtl}
         position="relative"
         ref={datepickerWrapperRef}
@@ -185,13 +189,14 @@ function DateSingleInput({
           ariaLabel={phrases.dateAriaLabel}
           placeholder={phrases.datePlaceholder}
           value={getInputValue(date, displayFormat, '')}
-          onClick={() => onFocusChange(true)}
+          onClick={() => !disabled && onFocusChange(true)}
           showCalendarIcon={showCalendarIcon}
           vertical={vertical}
           isActive={false}
           padding={theme.dateSingleInputPadding}
           rtl={rtl}
           onChange={handleInputChange}
+          disabled={disabled}
           // @ts-ignore
           dateFormat={displayFormat}
         />
