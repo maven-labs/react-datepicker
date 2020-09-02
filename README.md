@@ -1,29 +1,12 @@
-# @datepicker-react/styled
+# @maven-labs/react-datepicker
 
-[![Gzip size](https://img.shields.io/bundlephobia/minzip/@datepicker-react/styled.svg)](https://img.shields.io/bundlephobia/minzip/@datepicker-react/styled.svg)
-[![Coverage Status](https://coveralls.io/repos/github/tresko/react-datepicker/badge.svg?branch=master)](https://coveralls.io/github/tresko/react-datepicker?branch=master)
-[![Build Status](https://travis-ci.org/tresko/react-datepicker.svg?branch=master)](https://travis-ci.org/tresko/react-datepicker)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/0c2c3960-87ee-4f5e-a4dc-1e2aac57d2b4/deploy-status)](https://app.netlify.com/sites/react-datepicker/deploys)
-
-[![NPM](https://nodei.co/npm/@datepicker-react/styled.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/@datepicker-react/styled?downloads=true&downloadRank=true&stars=true)
-
-> An easily internationalizable, accessible, mobile-friendly datepicker library for the web, build
+> An easily internationalizable, accessible, mobile-friendly datepicker library for the web, built
 > with styled-components.
 
 ![example](./docs/datepicker.gif)
 
-## if anyone would like to continue developing this project, please contact me at sedej.miha@gmail.com and I will transfer the ownership of the project. I don’t intend to maintain the project anymore because I don’t have enough time.
-
-## How to build your own datepicker?
-
-Simple. Use
-[React hooks (@datepicker-react/hooks)](https://github.com/tresko/react-datepicker/tree/master/packages/hooks).
 
 ## Live Playground
-
-For examples of the datepicker in action, go to https://react-datepicker.netlify.com/.
-
-OR
 
 To run that demo on your own computer:
 
@@ -36,14 +19,12 @@ To run that demo on your own computer:
 
 ### Install
 
-```sh
-yarn add @datepicker-react/styled styled-components
-```
+**TODO: Github Package Registry Install Instructions**
 
 ### Include component
 
 ```js
-import {DateRangeInput, DateSingleInput, Datepicker} from '@datepicker-react/styled'
+import {DateRangeInput, DateSingleInput, Datepicker} from '@maven-labs/react-datepicker'
 ```
 
 ### DateRangeInput
@@ -60,7 +41,7 @@ Here is the minimum _REQUIRED_ setup you need to get the `DateRangeInput` workin
 
 ```jsx
 import React, {useReducer} from 'react'
-import {DateRangeInput} from '@datepicker-react/styled'
+import {DateRangeInput} from '@maven-labs/react-datepicker'
 
 const initialState = {
   startDate: null,
@@ -138,7 +119,7 @@ Here is the minimum _REQUIRED_ setup you need to get the `Datepicker` working:
 
 ```jsx
 import React, {useState} from 'react'
-import {Datepicker, START_DATE} from '@datepicker-react/styled'
+import {Datepicker, START_DATE} from '@maven-labs/react-datepicker'
 
 function App() {
   const [state, setState] = useState({
@@ -206,7 +187,7 @@ Here is the minimum _REQUIRED_ setup you need to get the `DateSingleInput` worki
 
 ```jsx
 import React, {useReducer} from 'react'
-import {DateSingleInput} from '@datepicker-react/styled'
+import {DateSingleInput} from '@maven-labs/react-datepicker'
 
 const initialState = {
   date: null,
@@ -267,7 +248,7 @@ inputId?: string
 
 ### Theming
 
-`@datepicker-react/styled` supports theming with Styled components `ThemeProvider` and
+`@maven-labs/react-datepicker` supports theming with Styled components `ThemeProvider` and
 `Styled System` theme-based style.
 
 ```jsx
@@ -291,24 +272,15 @@ inputId?: string
 ```
 
 - [See all theme props](./docs/THEME_PROPS.md)
-- [CodeSandbox example](https://codesandbox.io/s/theming-datepicker-reactstyled-42pdb?fontsize=14)
 
-## Who's using
+## Credit
 
-[LifeOnScreen](https://lifeonscreen.com)
-
-## Articles
-
-- [Yet another datepicker in React](https://tresko.dev/yet-another-datepicker-in-react)
-- [Theming React datepicker](https://tresko.dev/theming-react-datepicker-datepicker-react-styled)
-- [Create a custom React date picker in 10 minutes](https://tresko.dev/create-a-custom-react-date-picker-in-10-minutes)
+This library was originally forked from the great work initially done by Miha Sedej on [@datepicker-react/styled](https://www.npmjs.com/package/@datepicker-react/styled) over at [tresko/react-datepicker](https://github.com/tresko/react-datepicker)
 
 ## License
 
+**TODO: Update license, add contribution guidelines, etc. before we release anything publicly**
+
 Licensed under the MIT License, Copyright © 2019-present Miha Sedej.
 
-See [LICENSE](https://github.com/tresko/react-datepicker/blob/master/LICENSE) for more information.
-
-<br/>
-
-[![Buy me a coffee](https://camo.githubusercontent.com/031fc5a134cdca5ae3460822aba371e63f794233/68747470733a2f2f7777772e6275796d6561636f666665652e636f6d2f6173736574732f696d672f637573746f6d5f696d616765732f6f72616e67655f696d672e706e67)](https://www.buymeacoffee.com/T1Eu7XSoF)
+See [LICENSE](./blob/master/LICENSE) for more information.
