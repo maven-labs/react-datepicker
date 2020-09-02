@@ -6,7 +6,7 @@
   "description": "A datepicker library for the web.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tresko/react-datepicker.git"
+    "url": "git://github.com/maven-labs/react-datepicker.git"
   },
   "keywords": [
     "react",
@@ -41,9 +41,9 @@
   "author": "Miha Sedej",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tresko/react-datepicker/issues"
+    "url": "https://github.com/maven-labs/react-datepicker/issues"
   },
-  "homepage": "https://github.com/tresko/react-datepicker#readme",
+  "homepage": "https://github.com/maven-labs/react-datepicker#readme",
   "devDependencies": {
     "@babel/core": "^7.10.2",
     "@babel/preset-env": "^7.10.2",
