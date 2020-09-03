@@ -1,5 +1,5 @@
 {
-  "private": true,
+  "private": false,
   "description": "A datepicker library for React.",
   "repository": {
     "type": "git",
