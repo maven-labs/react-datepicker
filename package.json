@@ -17,8 +17,8 @@
   "author": "Mark Rebec <mark@maven-labs.com>",
   "homepage": "https://github.com/maven-labs/react-datepicker",
   "license": "MIT",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "typings": "dist/index.d.ts",
   "directories": {
     "dist": "dist",
@@ -28,7 +28,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "webpack --mode production",
+    "build": "yarn tsc && yarn webpack --mode production",
     "watch": "webpack --mode development --watch",
     "test": "is-ci \"test:coverage\" \"test:watch\"",
     "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand",

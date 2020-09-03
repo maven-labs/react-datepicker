@@ -1,14 +1,11 @@
 const path = require('path');
 
 module.exports = {
-  entry: {
-    styled: './src/styled/index.ts',
-    hooks: './src/hooks/index.ts',
-  },
+  entry: './src/index.ts',
 
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].js',
+    filename: 'index.js',
   },
 
   resolve: {
