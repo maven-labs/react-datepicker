@@ -33,7 +33,8 @@
     "test:generate-output": "jest --json --outputFile=jest-test-results.json",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "lint:ts": "eslint ./src/**/*.ts{,x}",
+    "lint": "eslint ./src/**/*.ts{,x}",
+    "tsc": "tsc --build tsconfig.json",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -c .storybook",
     "coveralls": "yarn run test:coverage && cat ./coverage/lcov.info | coveralls"

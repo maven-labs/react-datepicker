@@ -25,7 +25,5 @@
     "babelCore": "@babel/core"
   },
   "include": ["src"],
-  "exclude": ["node_modules", "build"],
-  "compilerOptions": {
-  }
+  "exclude": ["node_modules", "build"]
 }
