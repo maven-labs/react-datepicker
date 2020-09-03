@@ -17,7 +17,7 @@
   "author": "Mark Rebec <mark@maven-labs.com>",
   "homepage": "https://github.com/maven-labs/react-datepicker",
   "license": "MIT",
-  "main": "dist/index.js",
+  "main": "dist/cjs/index.js",
   "module": "dist/index.js",
   "typings": "dist/index.d.ts",
   "directories": {
@@ -48,8 +48,6 @@
     "styled-components": ">= 4.0.0"
   },
   "dependencies": {
-    "date-fns": "^2.14.0",
-    "styled-system": "^5.1.5"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
@@ -73,7 +71,6 @@
     "@types/styled-system": "^5.1.9",
     "@typescript-eslint/eslint-plugin": "^3.3.0",
     "@typescript-eslint/parser": "^3.3.0",
-    "awesome-typescript-loader": "^5.2.1",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "babel-plugin-require-context-hook": "^1.0.0",
@@ -86,7 +83,6 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^4.0.4",
-    "husky": "^4.2.5",
     "is-ci-cli": "^2.1.1",
     "jest": "^26.0.1",
     "jest-config": "^26.0.1",
@@ -104,11 +100,13 @@
     "react-dom": "^16.13.1",
     "react-test-renderer": "^16.13.1",
     "styled-components": "^5.1.1",
+    "styled-system": "^5.1.5",
     "ts-jest": "^26.1.0",
+    "ts-loader": "^8.0.3",
     "tslib": "^2.0.0",
     "typescript": "^3.9.5",
-    "webpack": "^4.44.0",
-    "webpack-cli": "^3.3.12"
+    "webpack": "^5.0.0-beta",
+    "webpack-cli": "^4.0.0-beta"
   },
   "resolutions": {
     "@types/react": "^16.9.38"

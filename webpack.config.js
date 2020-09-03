@@ -2,11 +2,22 @@ const path = require('path');
 
 module.exports = {
   entry: './src/index.ts',
+  /*
+  entry: {
+    index: './src/index.ts',
+    'hooks/index': './src/hooks/index.ts',
+    'styled/index': './src/styled/index.ts',
+  },
+  */
 
   output: {
-    library: '@maven-labs/react-datepicker',
-    libraryTarget: 'umd',
-    path: path.resolve(__dirname, 'dist'),
+    //library: 'reactDatepicker',
+    //libraryTarget: 'umd',
+    //libraryTarget: 'commonjs',
+    libraryTarget: 'commonjs2',
+    path: path.resolve(__dirname, 'dist/cjs'),
+    //filename: '[name].js',
+    //filename: 'react-datepicker.js',
     filename: 'index.js',
   },
 
@@ -26,14 +37,46 @@ module.exports = {
         ]
       },
       {
-        test: /\.(ts|js)x?$/,
+        test: /\.tsx?$/,
+        exclude: /node_modules/,
+        use: ["ts-loader"]
+      },
+      {
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: ["babel-loader"]
       },
     ]
   },
 
+  devtool: 'source-map',
+
+  /*
+  optimization: {
+    runtimeChunk: true
+  },
+  */
+
   externals: {
-    'react': 'commonjs react',
+    'react': {
+      commonjs: 'react',
+      commonjs2: 'react',
+      amd: 'React',
+      root: 'React',
+    },
+  /*
+    'react-dom': {
+      commonjs: 'react-dom',
+      commonjs2: 'react-dom',
+      amd: 'react-dom',
+      root: 'ReactDOM',
+    },
+    'styled-components': {
+      commonjs: 'styled-components',
+      commonjs2: 'styled-components',
+      amd: 'styled-components',
+      root: 'StyledComponents', // ??
+    },
+  */
   },
 };
