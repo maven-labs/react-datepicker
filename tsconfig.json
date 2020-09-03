@@ -24,7 +24,6 @@
     "useBabel": true,
     "babelCore": "@babel/core"
   },
-  "references": [{"path": "packages/hooks"}, {"path": "packages/styled"}],
   "include": ["src"],
   "exclude": ["node_modules", "build"],
   "compilerOptions": {

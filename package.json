@@ -38,12 +38,9 @@
     "build-storybook": "build-storybook -c .storybook",
     "coveralls": "yarn run test:coverage && cat ./coverage/lcov.info | coveralls"
   },
-  "author": "Miha Sedej",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/maven-labs/react-datepicker/issues"
   },
-  "homepage": "https://github.com/maven-labs/react-datepicker#readme",
   "peerDependencies": {
     "react": "^16.8.5",
     "styled-components": ">= 4.0.0"
@@ -115,6 +112,5 @@
   },
   "resolutions": {
     "@types/react": "^16.9.38"
-  },
-  "name": "react-datepicker"
+  }
 }
