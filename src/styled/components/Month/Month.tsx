@@ -1,5 +1,5 @@
 import React from 'react'
-import {useMonth, CalendarDay, FirstDayOfWeek} from '@datepicker-react/hooks'
+import {useMonth, CalendarDay, FirstDayOfWeek} from '../../../hooks'
 import styled, {keyframes} from 'styled-components'
 import MonthLabel from '../MonthLabel'
 import DayLabel from '../DayLabel'

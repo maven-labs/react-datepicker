@@ -1,7 +1,7 @@
 import {advanceTo, clear} from 'jest-date-mock'
 import * as React from 'react'
 import {render, fireEvent, act} from '@testing-library/react'
-import {END_DATE, START_DATE} from '@datepicker-react/hooks'
+import {END_DATE, START_DATE} from '../../../hooks'
 import Datepicker from '.'
 
 beforeEach(() => {

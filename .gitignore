@@ -3,4 +3,4 @@ coverage/
 .idea/
 .vscode/
 **/**/stats.html
-build/
+dist/

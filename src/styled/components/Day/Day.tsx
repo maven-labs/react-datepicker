@@ -1,7 +1,7 @@
 import React, {useMemo, useContext, useRef} from 'react'
 import styled, {css, ThemeContext} from 'styled-components'
 import {compose, ResponsiveValue, style, TLengthStyledSystem} from 'styled-system'
-import {useDay} from '@datepicker-react/hooks'
+import {useDay} from '../../../hooks'
 import {
   boxShadow,
   BoxShadowProps,

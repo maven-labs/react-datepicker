@@ -22,7 +22,7 @@ import {
   getInputValue,
   END_DATE,
   FocusedInput,
-} from '@datepicker-react/hooks'
+} from '../../../hooks'
 import {dateRangeInputPhrases, DateRangeInputPhrases} from '../../phrases'
 import Grid from '../Grid'
 import Flex from '../Flex'

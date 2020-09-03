@@ -1,5 +1,5 @@
 import * as React from 'react'
-import {dayLabelFormat, weekdayLabelFormat, monthLabelFormat} from '@datepicker-react/hooks'
+import {dayLabelFormat, weekdayLabelFormat, monthLabelFormat} from '../../../hooks'
 import {render} from '../../testUtil'
 import Month from '.'
 

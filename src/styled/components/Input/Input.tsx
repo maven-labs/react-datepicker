@@ -1,6 +1,6 @@
 import React, {useContext, useState, useEffect, useRef} from 'react'
 import styled, {ThemeContext} from 'styled-components'
-import {parseDate} from '@datepicker-react/hooks'
+import {parseDate} from '../../../hooks'
 import {
   background,
   BackgroundProps,

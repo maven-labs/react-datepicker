@@ -7,7 +7,7 @@ import {
   getInputValue,
   OnDatesChangeProps,
   FirstDayOfWeek,
-} from '@datepicker-react/hooks'
+} from '../../../hooks'
 import {dateSingleInputPhrases, DateSingleInputPhrases} from '../../phrases'
 import Box from '../Box'
 import Input from '../Input'

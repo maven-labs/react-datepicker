@@ -1,6 +1,6 @@
 import * as React from 'react'
 import {advanceTo, clear} from 'jest-date-mock'
-import {END_DATE, START_DATE} from '@datepicker-react/hooks'
+import {END_DATE, START_DATE} from '../../../hooks'
 import {render, fireEvent} from '../../testUtil'
 import Datepicker from '.'
 import {ThemeProvider} from 'styled-components'

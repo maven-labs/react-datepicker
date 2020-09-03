@@ -6,7 +6,7 @@ import {
   OnDatesChangeProps,
   FormatFunction,
   MonthType,
-} from '@datepicker-react/hooks'
+} from '../hooks'
 import DateRangeInput from './components/DateRangeInput'
 import DateSingleInput, {OnDateChangeProps} from './components/DateSingleInput'
 import Datepicker from './components/Datepicker'

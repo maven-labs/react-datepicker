@@ -17,15 +17,15 @@
   "author": "Mark Rebec <mark@maven-labs.com>",
   "homepage": "https://github.com/maven-labs/react-datepicker",
   "license": "MIT",
-  "main": "build/index.cjs.js",
-  "module": "build/index.esm.js",
-  "typings": "build/index.d.ts",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
   "directories": {
-    "build": "build",
+    "dist": "dist",
     "test": "__tests__"
   },
   "files": [
-    "build"
+    "dist"
   ],
   "scripts": {
     "test": "is-ci \"test:coverage\" \"test:watch\"",

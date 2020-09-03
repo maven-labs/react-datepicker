@@ -5,7 +5,7 @@ import {
   dayLabelFormat as dayLabelFormatFn,
   weekdayLabelFormat as weekdayLabelFormatFn,
   monthLabelFormat as monthLabelFormatFn,
-} from '@datepicker-react/hooks'
+} from '../../../hooks'
 import {storiesOf} from '@storybook/react'
 import {action} from '@storybook/addon-actions'
 import {text, boolean} from '@storybook/addon-knobs'

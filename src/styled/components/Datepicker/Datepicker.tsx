@@ -36,7 +36,7 @@ import {
   dayLabelFormat as dayLabelFormatFn,
   weekdayLabelFormat as weekdayLabelFormatFn,
   monthLabelFormat as monthLabelFormatFn,
-} from '@datepicker-react/hooks'
+} from '../../../hooks'
 import {datepickerPhrases, DatepickerPhrases} from '../../phrases'
 import SelectedDate from '../SelectedDate'
 import Grid from '../Grid'

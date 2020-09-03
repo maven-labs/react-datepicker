@@ -8,7 +8,7 @@ import {
   dayLabelFormat as dayLabelFormatFn,
   weekdayLabelFormat as weekdayLabelFormatFn,
   monthLabelFormat as monthLabelFormatFn,
-} from '@datepicker-react/hooks'
+} from '../../../hooks'
 import {es as locale} from 'date-fns/locale'
 import Flex from '../Flex'
 import {
