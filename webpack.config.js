@@ -1,3 +1,12 @@
+/*
+ * NOT CURRENTLY USED
+ *
+ * We're using rollup to continue building CJS + ESM, but leaving this here so
+ * we can come back to it later on and use tooling that's more familiar to our
+ * whole team (although rollup is pretty straightforward and similar, and the
+ * library probably wouldn't require many changes...)
+ */
+
 const path = require('path');
 
 module.exports = {
@@ -11,11 +20,11 @@ module.exports = {
   */
 
   output: {
-    //library: 'reactDatepicker',
-    //libraryTarget: 'umd',
+    library: '@maven-labs/react-datepicker',
+    libraryTarget: 'umd',
     //libraryTarget: 'commonjs',
-    libraryTarget: 'commonjs2',
-    path: path.resolve(__dirname, 'dist/cjs'),
+    //libraryTarget: 'commonjs2',
+    path: path.resolve(__dirname, 'dist'),
     //filename: '[name].js',
     //filename: 'react-datepicker.js',
     filename: 'index.js',
@@ -57,14 +66,15 @@ module.exports = {
   },
   */
 
+  externals: ['react', 'react-dom', 'styled-components'],
+  /*
   externals: {
     'react': {
       commonjs: 'react',
       commonjs2: 'react',
-      amd: 'React',
+      amd: 'react',
       root: 'React',
     },
-  /*
     'react-dom': {
       commonjs: 'react-dom',
       commonjs2: 'react-dom',
@@ -77,6 +87,6 @@ module.exports = {
       amd: 'styled-components',
       root: 'StyledComponents', // ??
     },
-  */
   },
+  */
 };
