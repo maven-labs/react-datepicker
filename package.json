@@ -13,7 +13,7 @@
     "hooks"
   ],
   "name": "@maven-labs/react-datepicker",
-  "version": "2.7.3",
+  "version": "3.0.0",
   "author": "Mark Rebec <mark@maven-labs.com>",
   "homepage": "https://github.com/maven-labs/react-datepicker",
   "license": "MIT",
