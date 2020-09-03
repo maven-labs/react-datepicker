@@ -1,4 +1,4 @@
-export {
+import {
   DateRangeInput,
   DateSingleInput,
   FirstDayOfWeek,
@@ -18,7 +18,7 @@ export {
   OnDateChangeProps,
 } from './styled'
 
-export {
+import {
   useDay,
   useMonth,
   UseMonthProps,
@@ -44,3 +44,48 @@ export {
   monthLabelFormat,
   parseDate,
 } from './hooks'
+
+export {
+  DateRangeInput,
+  DateSingleInput,
+  FirstDayOfWeek,
+  Datepicker,
+  dateRangeInputPhrases,
+  DateRangeInputPhrases,
+  datepickerPhrases,
+  DatepickerPhrases,
+  DateSingleInputPhrases,
+  dateSingleInputPhrases,
+  FocusedInput,
+  START_DATE,
+  END_DATE,
+  OnDatesChangeProps,
+  FormatFunction,
+  MonthType,
+  OnDateChangeProps,
+
+  useDay,
+  useMonth,
+  UseMonthProps,
+  UseMonthResult,
+  GetDaysProps,
+  GetWeekdayLabelsProps,
+  getWeekdayLabels,
+  getDays,
+  CalendarDay,
+  isDateSelected,
+  isFirstOrLastSelectedDate,
+  isStartDate,
+  isEndDate,
+  isDateBlocked,
+  getCurrentYearMonthAndDate,
+  getDateMonthAndYear,
+  getInitialMonths,
+  useDatepicker,
+  UseDatepickerProps,
+  getInputValue,
+  dayLabelFormat,
+  weekdayLabelFormat,
+  monthLabelFormat,
+  parseDate,
+}

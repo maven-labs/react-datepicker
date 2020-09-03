@@ -4,6 +4,8 @@ module.exports = {
   entry: './src/index.ts',
 
   output: {
+    library: '@maven-labs/react-datepicker',
+    libraryTarget: 'umd',
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
   },
@@ -28,18 +30,10 @@ module.exports = {
         exclude: /node_modules/,
         use: ["babel-loader"]
       },
-      /*
-      {
-        test: /\.(eot|otf|ttf|woff|woff2|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        use: [ 'url-loader' ],
-      },
-      {
-        test: /\.(gif|png)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        use: [ 'file-loader' ],
-      }
-      */
     ]
   },
 
-  //plugins: []
+  externals: {
+    'react': 'commonjs react',
+  },
 };
