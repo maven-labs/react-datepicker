@@ -94,6 +94,8 @@ export interface DateSingleInputProps {
   unavailableDates?: Date[]
   zIndex?: number
   disabled?: boolean
+  required?: boolean
+  readOnly?: boolean
 }
 
 function DateSingleInput({
@@ -111,6 +113,8 @@ function DateSingleInput({
   initialVisibleMonth,
   zIndex,
   disabled = false,
+  required = false,
+  readOnly = false,
   numberOfMonths = 1,
   showClose = true,
   showResetDate = true,
@@ -197,6 +201,8 @@ function DateSingleInput({
           rtl={rtl}
           onChange={handleInputChange}
           disabled={disabled}
+          required={required}
+          readOnly={readOnly}
           // @ts-ignore
           dateFormat={displayFormat}
         />

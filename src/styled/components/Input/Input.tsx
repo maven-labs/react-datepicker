@@ -159,6 +159,8 @@ interface InputProps {
   onChange?(date: Date): void
   dateFormat: string
   disabled?: boolean
+  required?: boolean
+  readOnly?: boolean
 }
 
 function Input({
@@ -176,6 +178,8 @@ function Input({
   dateFormat,
   onChange = () => {},
   disabled = false,
+  required = false,
+  readOnly = false,
 }: InputProps) {
   const [searchString, setSearchString] = useState(value)
   const ref = useRef(null)
@@ -297,6 +301,8 @@ function Input({
         onFocus={onClick}
         data-testid="DatepickerInput"
         disabled={disabled}
+        required={required}
+        readOnly={readOnly}
       />
     </InputLabel>
   )

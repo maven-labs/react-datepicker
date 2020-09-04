@@ -1,5 +1,215 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`should render disabled variant 1`] = `
+.c0 {
+  display: block;
+  position: relative;
+  border: 1px solid #BCBEC0;
+  background: #ffffff;
+  border-radius: 2px;
+  margin: 0;
+}
+
+.c1 {
+  border: 0;
+  width: 100%;
+  min-height: 46px;
+  background: #ffffff;
+  font-family: Montserrat,sans-serif;
+  color: #001217;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.c1::-webkit-input-placeholder {
+  font-weight: 500;
+  color: #929598;
+}
+
+.c1::-moz-placeholder {
+  font-weight: 500;
+  color: #929598;
+}
+
+.c1:-moz-placeholder {
+  font-weight: 500;
+  color: #929598;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+}
+
+<div>
+  <label
+    class="c0"
+    display="block"
+    for="startDate"
+  >
+    <input
+      aria-label="startDate"
+      autocomplete="off"
+      class="c1"
+      color="#001217"
+      data-testid="DatepickerInput"
+      disabled=""
+      font-family="Montserrat, sans-serif"
+      font-size="14px"
+      font-weight="600"
+      id="startDate"
+      placeholder="Placeholder"
+      tabindex="0"
+      value="14/11/1992"
+      width="100%"
+    />
+  </label>
+</div>
+`;
+
+exports[`should render readOnly variant 1`] = `
+.c0 {
+  display: block;
+  position: relative;
+  border: 1px solid #BCBEC0;
+  background: #ffffff;
+  border-radius: 2px;
+  margin: 0;
+}
+
+.c1 {
+  border: 0;
+  width: 100%;
+  min-height: 46px;
+  background: #ffffff;
+  font-family: Montserrat,sans-serif;
+  color: #001217;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.c1::-webkit-input-placeholder {
+  font-weight: 500;
+  color: #929598;
+}
+
+.c1::-moz-placeholder {
+  font-weight: 500;
+  color: #929598;
+}
+
+.c1:-moz-placeholder {
+  font-weight: 500;
+  color: #929598;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+}
+
+<div>
+  <label
+    class="c0"
+    display="block"
+    for="startDate"
+  >
+    <input
+      aria-label="startDate"
+      autocomplete="off"
+      class="c1"
+      color="#001217"
+      data-testid="DatepickerInput"
+      font-family="Montserrat, sans-serif"
+      font-size="14px"
+      font-weight="600"
+      id="startDate"
+      placeholder="Placeholder"
+      readonly=""
+      tabindex="0"
+      value="14/11/1992"
+      width="100%"
+    />
+  </label>
+</div>
+`;
+
+exports[`should render required variant 1`] = `
+.c0 {
+  display: block;
+  position: relative;
+  border: 1px solid #BCBEC0;
+  background: #ffffff;
+  border-radius: 2px;
+  margin: 0;
+}
+
+.c1 {
+  border: 0;
+  width: 100%;
+  min-height: 46px;
+  background: #ffffff;
+  font-family: Montserrat,sans-serif;
+  color: #001217;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.c1::-webkit-input-placeholder {
+  font-weight: 500;
+  color: #929598;
+}
+
+.c1::-moz-placeholder {
+  font-weight: 500;
+  color: #929598;
+}
+
+.c1:-moz-placeholder {
+  font-weight: 500;
+  color: #929598;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+}
+
+<div>
+  <label
+    class="c0"
+    display="block"
+    for="startDate"
+  >
+    <input
+      aria-label="startDate"
+      autocomplete="off"
+      class="c1"
+      color="#001217"
+      data-testid="DatepickerInput"
+      font-family="Montserrat, sans-serif"
+      font-size="14px"
+      font-weight="600"
+      id="startDate"
+      placeholder="Placeholder"
+      required=""
+      tabindex="0"
+      value="14/11/1992"
+      width="100%"
+    />
+  </label>
+</div>
+`;
+
 exports[`should render rtl variant 1`] = `
 .c0 {
   display: block;

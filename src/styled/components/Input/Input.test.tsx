@@ -110,3 +110,66 @@ test('should render vertical variant', () => {
 
   expect(container).toMatchSnapshot()
 })
+
+test('should render disabled variant', () => {
+  const onClick = jest.fn()
+  const {container} = render(
+    <Input
+      disabled
+      vertical={false}
+      isActive={false}
+      rtl={false}
+      showCalendarIcon={false}
+      ariaLabel="startDate"
+      id="startDate"
+      placeholder="Placeholder"
+      onClick={onClick}
+      value="14/11/1992"
+      dateFormat="MM/DD/YYYY"
+    />,
+  )
+
+  expect(container).toMatchSnapshot()
+})
+
+test('should render required variant', () => {
+  const onClick = jest.fn()
+  const {container} = render(
+    <Input
+      required
+      vertical={false}
+      isActive={false}
+      rtl={false}
+      showCalendarIcon={false}
+      ariaLabel="startDate"
+      id="startDate"
+      placeholder="Placeholder"
+      onClick={onClick}
+      value="14/11/1992"
+      dateFormat="MM/DD/YYYY"
+    />,
+  )
+
+  expect(container).toMatchSnapshot()
+})
+
+test('should render readOnly variant', () => {
+  const onClick = jest.fn()
+  const {container} = render(
+    <Input
+      readOnly
+      vertical={false}
+      isActive={false}
+      rtl={false}
+      showCalendarIcon={false}
+      ariaLabel="startDate"
+      id="startDate"
+      placeholder="Placeholder"
+      onClick={onClick}
+      value="14/11/1992"
+      dateFormat="MM/DD/YYYY"
+    />,
+  )
+
+  expect(container).toMatchSnapshot()
+})

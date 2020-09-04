@@ -172,6 +172,38 @@ test('should render a disabled input', () => {
   expect(container).toMatchSnapshot()
 })
 
+test('should render a required input', () => {
+  const onDatesChange = jest.fn()
+  const onFocusChange = jest.fn()
+  const {container} = render(
+    <Datepicker
+      required
+      showDatepicker={false}
+      onFocusChange={onFocusChange}
+      date={null}
+      onDateChange={onDatesChange}
+      placement="top"
+    />,
+  )
+  expect(container).toMatchSnapshot()
+})
+
+test('should render a readOnly input', () => {
+  const onDatesChange = jest.fn()
+  const onFocusChange = jest.fn()
+  const {container} = render(
+    <Datepicker
+      readOnly
+      showDatepicker={false}
+      onFocusChange={onFocusChange}
+      date={null}
+      onDateChange={onDatesChange}
+      placement="top"
+    />,
+  )
+  expect(container).toMatchSnapshot()
+})
+
 test('should render without calendar icon, reset dates and close component', () => {
   const onDatesChange = jest.fn()
   const onFocusChange = jest.fn()
