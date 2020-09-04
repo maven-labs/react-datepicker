@@ -1,6 +1,10 @@
 {
-  "private": false,
+  "name": "@maven-labs/react-datepicker",
   "description": "A datepicker library for React.",
+  "version": "3.0.1",
+  "author": "Mark Rebec <mark@maven-labs.com>",
+  "homepage": "https://github.com/maven-labs/react-datepicker",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git://github.com/maven-labs/react-datepicker.git"
@@ -12,11 +16,7 @@
     "styled-system",
     "hooks"
   ],
-  "name": "@maven-labs/react-datepicker",
-  "version": "3.0.0",
-  "author": "Mark Rebec <mark@maven-labs.com>",
-  "homepage": "https://github.com/maven-labs/react-datepicker",
-  "license": "MIT",
+  "private": false,
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",
